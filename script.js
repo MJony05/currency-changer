@@ -33,14 +33,13 @@ function select2(el) {
   }
 }
 
-btn.addEventListener("click", natija);
-window.addEventListener("keydown", function (e) {
-  if (e.key == "Enter") {
-    natija(e);
-  }
-});
-function natija(e) {
-  e.preventDefault(e);
+// btn.addEventListener("click", natija);
+// window.addEventListener("keydown", function (e) {
+//   if (e.key == "Enter") {
+//     natija(e);
+//   }
+// });
+setInterval(function () {
   let a = document.querySelector(".input").value;
   if (a < 0) {
     a *= -1;
@@ -50,4 +49,16 @@ function natija(e) {
   let select2 = document.getElementsByClassName("select2")[0].value;
   let res = (data[select2] / data[select1]) * a;
   result.textContent = `${a} ${select1} = ${res} ${select2}`;
-}
+}, 100);
+// function natija(e) {
+//   e.preventDefault(e);
+//   let a = document.querySelector(".input").value;
+//   if (a < 0) {
+//     a *= -1;
+//     document.querySelector(".input").value = a;
+//   }
+//   let select1 = document.getElementsByClassName("select1")[0].value;
+//   let select2 = document.getElementsByClassName("select2")[0].value;
+//   let res = (data[select2] / data[select1]) * a;
+//   result.textContent = `${a} ${select1} = ${res} ${select2}`;
+// }

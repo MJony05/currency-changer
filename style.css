@@ -1,4 +1,4 @@
-body {
+/* body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,6 +10,49 @@ body {
 }
 .drop-list {
   display: flex;
-  /* background-color: black; */
+  /* background-color: black; 
   gap: 3rem;
+} */
+body {
+  background: #add8e6;
+}
+
+h1 {
+  padding: 0.5em;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0.25em;
+}
+
+i {
+  padding: 0 0.25em 0 0.25em;
+}
+
+div {
+  margin: 2em auto;
+  padding: 0 auto;
+  background: white;
+  border-radius: 8px;
+}
+
+.main {
+  box-shadow: 3px 5px 45px black;
+}
+
+.form-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form {
+  padding-bottom: 2em;
+}
+
+#result-text {
+  padding-left: 1.1em;
+  padding-bottom: 2em;
 }
