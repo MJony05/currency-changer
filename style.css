@@ -3,38 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.exchange-rate2 {
-  margin: 1rem 0;
-}
-.drop-list {
-  display: flex;
-  /* background-color: black; 
-  gap: 3rem;
-} */
+
 body {
   background: #add8e6;
   padding: 0 1rem;
+  font-family: "Open Sans", sans-serif;
 }
-
-/* h1 {
-  padding: 0.5em;
-  margin: 0;
-}
-
-h2 {
-  margin-top: 0.25em;
-}
-
-i {
-  padding: 0 0.25em 0 0.25em;
-} */
 
 .container {
   max-width: 800px;
@@ -45,6 +19,7 @@ i {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 header {
   font-size: 2rem;
@@ -52,10 +27,10 @@ header {
 }
 form {
   width: 100%;
-  /* background-color: black; */
 }
 .convert {
   font-size: 2rem;
+  margin: 0 auto;
 }
 .drop-list {
   display: flex;
@@ -95,23 +70,13 @@ form {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0.5rem;
+  gap: 0.1rem;
 }
 .exchange-rate {
   font-size: 1.5rem;
   text-align: center;
+  margin-top: 2rem;
 }
-/* .form-container {
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.date {
+  margin-top: 2rem;
 }
-
-.form {
-  padding-bottom: 2em;
-}
-
-#result-text {
-  padding-left: 1.1em;
-  padding-bottom: 2em;
-} */
