@@ -39,7 +39,7 @@ i {
 .container {
   max-width: 800px;
   margin: 2em auto;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0.5rem;
   background: white;
   border-radius: 8px;
   display: flex;

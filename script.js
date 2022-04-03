@@ -48,7 +48,7 @@ setInterval(function () {
   let select1 = document.getElementsByClassName("select1")[0].value;
   let select2 = document.getElementsByClassName("select2")[0].value;
   let res = (data[select2] / data[select1]) * a;
-  result.textContent = `${a} ${select1} = ${res} ${select2}`;
+  result.textContent = `${a} ${select1} = ${res.toFixed(3)} ${select2}`;
 }, 100);
 // function natija(e) {
 //   e.preventDefault(e);
