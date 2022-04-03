@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /* body {
   display: flex;
   flex-direction: column;
@@ -15,9 +20,10 @@
 } */
 body {
   background: #add8e6;
+  padding: 0 1rem;
 }
 
-h1 {
+/* h1 {
   padding: 0.5em;
   margin: 0;
 }
@@ -28,20 +34,73 @@ h2 {
 
 i {
   padding: 0 0.25em 0 0.25em;
-}
+} */
 
-div {
+.container {
+  max-width: 800px;
   margin: 2em auto;
-  padding: 0 auto;
+  padding: 0.5rem 2rem;
   background: white;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+form {
+  width: 100%;
+  /* background-color: black; */
+}
+.convert {
+  font-size: 2rem;
+}
+.drop-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.drop-list > div {
+  width: 100%;
+}
+.select-box {
+  width: 100%;
+  background-color: aquamarine;
+}
+.select,
+.input {
+  font-size: 1rem;
+  display: inline-block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+.amount {
+  width: 50%;
+  margin: 1rem auto;
 }
 
-.main {
-  box-shadow: 3px 5px 45px black;
+.from p,
+.to p {
+  font-size: 1.5rem;
 }
-
-.form-container {
+.amount {
+  font-size: 1rem;
+}
+.history {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+.exchange-rate {
+  font-size: 1.5rem;
+  text-align: center;
+}
+/* .form-container {
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -55,4 +114,4 @@ div {
 #result-text {
   padding-left: 1.1em;
   padding-bottom: 2em;
-}
+} */
