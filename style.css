@@ -1,0 +1,5 @@
+.drop-list {
+  display: flex;
+  /* background-color: black; */
+  gap: 3rem;
+}
