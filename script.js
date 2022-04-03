@@ -4,14 +4,12 @@ let btn = document.querySelector(".btn");
 let data = 0;
 let bigData = 0;
 let date = document.querySelector(".date");
-fetch(
-  "http://api.exchangeratesapi.io/v1/latest?access_key=83df676cb8392baa139992175a54ac12"
-)
+fetch("https://api.fastforex.io/fetch-all?api_key=cd819107bf-af7afd5e1e-r9qw6m")
   .then((response) => response.json())
   .then(function (el1) {
     bigData = el1;
     console.log(bigData);
-    let cur = el1.rates;
+    let cur = el1.results;
     data = cur;
     for (let keys in cur) {
       select2(keys);
@@ -37,5 +35,5 @@ function natija(e) {
   let select2 = document.getElementsByClassName("select2")[0].value;
   let res = (data[select2] / data[select1]) * a;
   result.textContent = `${a} ${select1} = ${res} ${select2}`;
-  date.textContent = `Last updated on ` + bigData.date;
+  date.textContent = `Last updated on ` + bigData.updated;
 }
